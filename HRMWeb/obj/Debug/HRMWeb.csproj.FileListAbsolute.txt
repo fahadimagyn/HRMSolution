@@ -1,0 +1,7 @@
+D:\Projects\HRM\HRMSolution\HRMWeb\bin\HRMWeb.dll
+D:\Projects\HRM\HRMSolution\HRMWeb\bin\HRMWeb.pdb
+D:\Projects\HRM\HRMSolution\HRMWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\HRM\HRMSolution\HRMWeb\obj\Debug\HRMWeb.dll
+D:\Projects\HRM\HRMSolution\HRMWeb\obj\Debug\HRMWeb.pdb
+D:\Projects\HRM\HRMSolution\HRMWeb\bin\HRMLib.dll
+D:\Projects\HRM\HRMSolution\HRMWeb\bin\HRMLib.pdb
