@@ -3,3 +3,8 @@ D:\Projects\HRM\HRMSolution\HRMLib\bin\Debug\HRMLib.pdb
 D:\Projects\HRM\HRMSolution\HRMLib\obj\Debug\ResolveAssemblyReference.cache
 D:\Projects\HRM\HRMSolution\HRMLib\obj\Debug\HRMLib.dll
 D:\Projects\HRM\HRMSolution\HRMLib\obj\Debug\HRMLib.pdb
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMLib\bin\Debug\HRMLib.dll
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMLib\bin\Debug\HRMLib.pdb
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMLib\obj\Debug\HRMLib.csprojResolveAssemblyReference.cache
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMLib\obj\Debug\HRMLib.dll
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMLib\obj\Debug\HRMLib.pdb
