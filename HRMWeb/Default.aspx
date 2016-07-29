@@ -8,9 +8,25 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div
+    <div>
     
     </div>
+        <asp:Panel ID="designation" runat="server" BackColor="#33CCFF" Height="59px">
+            <asp:Label ID="companyName" runat="server" Text="Label"></asp:Label>
+            <br />
+            <asp:Label ID="user" runat="server" Text="Label"></asp:Label>
+            <br />
+            <asp:Label ID="desg" runat="server" Text="Label"></asp:Label>
+        </asp:Panel>
+        <asp:Menu ID="mymenu"  runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#666666" Height="36px" Orientation="Horizontal" StaticSubMenuIndent="10px" CssClass="menu">
+            <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#E3EAEB" />
+            <DynamicSelectedStyle BackColor="#1C5E55" />
+            <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#1C5E55" />
+        </asp:Menu>
     </form>
 </body>
 </html>

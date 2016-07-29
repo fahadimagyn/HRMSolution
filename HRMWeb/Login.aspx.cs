@@ -10,6 +10,8 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
+using System.Data.SqlClient;
+using System.Text;
 
 namespace HRMWeb
 {
@@ -18,6 +20,27 @@ namespace HRMWeb
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
+        {
+
+        }
+
+        protected void LoginButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Membership.ValidateUser(Login1.UserName, Login1.Password) == true)
+                {
+                    Session["user"] = Login1.UserName;
+                    Response.Redirect("Default.aspx");
+                }
+            }
+            catch(Exception es)
+            {
+                Login1.FailureText = "Error in connection ";
+            }
         }
     }
 }
