@@ -31,16 +31,27 @@ namespace HRMWeb
         {
             try
             {
-                if (Membership.ValidateUser(Login1.UserName, Login1.Password) == true)
+                if (Membership.ValidateUser(UserName.Text, Password.Text) == true)
                 {
-                    Session["user"] = Login1.UserName;
+                  
+                    Session["user"] = UserName.Text.ToString();
                     Response.Redirect("Default.aspx");
+                    
                 }
             }
-            catch(Exception es)
+            catch (Exception es)
             {
-                Login1.FailureText = "Error in connection ";
+                FailureText.Text= "Error in connection ";
             }
         }
-    }
+
+        protected void UserName_TextChanged1(object sender, EventArgs e)
+        {
+
+        }
+        protected void Password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+}
 }

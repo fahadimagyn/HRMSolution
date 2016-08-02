@@ -22,15 +22,6 @@ namespace HRMWeb {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// designation control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel designation;
-        
-        /// <summary>
         /// companyName control.
         /// </summary>
         /// <remarks>
@@ -56,6 +47,15 @@ namespace HRMWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label desg;
+        
+        /// <summary>
+        /// p2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel p2;
         
         /// <summary>
         /// mymenu control.

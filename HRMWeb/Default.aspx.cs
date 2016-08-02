@@ -16,11 +16,12 @@ using System.Text;
 namespace HRMWeb
 {
     public partial class _Default : System.Web.UI.Page
-    {  SqlConnection scon = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+    {
+        SqlConnection scon = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
-        {  
+        {
             if (!IsPostBack)
-            {  
+            {
                 if (Session["user"] != null)
                 {
                     set_company(Session["user"].ToString());
@@ -32,8 +33,8 @@ namespace HRMWeb
                 {
                     Response.Redirect("Login.aspx");
                 }
-            } 
-       }
+            }
+        }
         protected void set_company(String user)
         {
             SqlCommand scomd = new SqlCommand("Company_ByUserName", scon);
@@ -44,14 +45,14 @@ namespace HRMWeb
             scon.Open();
             sda.Fill(dt);
             Session["companyID"] = Convert.ToInt32(dt.Rows[0][0].ToString());
-            Session["companyName"]= dt.Rows[0][1].ToString();
+            Session["companyName"] = dt.Rows[0][1].ToString();
             scon.Close();
         }
         protected void set_label()
-        { 
-             companyName.Text=Session["companyName"].ToString();
-             user.Text= Session["user"].ToString();
-             desg.Text = ViewState["designation"].ToString();
+        {
+            companyName.Text = Session["companyName"].ToString();
+            user.Text = Session["user"].ToString();
+            desg.Text = ViewState["designation"].ToString();
         }
         protected void set_userDetail()
         {
@@ -78,7 +79,7 @@ namespace HRMWeb
                 scon.Close();
                 ViewState["designation"] = dt.Rows[0][0];
             }
-            
+
         }
         protected void menu()
         {
@@ -91,7 +92,7 @@ namespace HRMWeb
             scon.Open();
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             sda.Fill(ds);
-            menuData= ds.Tables[0];
+            menuData = ds.Tables[0];
             scon.Close();
             try
             {
@@ -118,7 +119,7 @@ namespace HRMWeb
         {
             DataView view = null;
             try
-            {  
+            {
                 view = new DataView(menuData);
                 view.RowFilter = "ParentID=" + parentMenuItem.Value;
                 foreach (DataRowView row in view)
@@ -126,7 +127,7 @@ namespace HRMWeb
                     MenuItem newMenuItem = new MenuItem(row["applicationName"].ToString(), row["applicationID"].ToString());
                     newMenuItem.NavigateUrl = row["applicationPath"].ToString();
                     parentMenuItem.ChildItems.Add(newMenuItem);
-                   // Response.Write(row["applicationName"].ToString());
+                    // Response.Write(row["applicationName"].ToString());
                     AddChildMenuItems(menuData, newMenuItem);
                 }
             }
@@ -140,10 +141,6 @@ namespace HRMWeb
             }
         }
 
-        protected void mymenu_MenuItemClick(object sender, MenuEventArgs e)
-        {
-
-        }
-    }
+    } 
     
 }

@@ -18,6 +18,11 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,6 +70,8 @@
     <Content Include="App_Data\HRM_log.ldf">
       <DependentUpon>HRM.mdf</DependentUpon>
     </Content>
+    <Content Include="css\style.css" />
+    <Content Include="css\StyleSheet1.css" />
     <Content Include="Default.aspx" />
     <Content Include="Leave\LeaveApproval.aspx" />
     <Content Include="Leave\LeaveRequest.aspx" />
@@ -189,12 +196,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Browsers\" />
     <Folder Include="App_Themes\GenericTheam\" />
     <Folder Include="Leave\Reports\" />
     <Folder Include="MasterPages\" />
     <Folder Include="Payroll\Reports\" />
     <Folder Include="UserAndProfile\Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Browsers\custom.browser">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -221,6 +232,9 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
