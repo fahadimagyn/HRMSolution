@@ -537,7 +537,155 @@ namespace HRMWeb.App_Code
             scon.Open();
             sda.Fill(dt);
             scon.Close();
+            foreach (DataRow row in dt.Rows)
+            {
+                if (row["employeeID"] != null)
+                {
+                    obj.employeeID=(Int32)row["employeeID"];
+                }
 
+                if (row["userName"] != null)
+                {
+                    obj.userName=row["userName"].ToString();
+                }
+                if (row["employeeTitle"] != null)
+                {
+                    obj.employeeTitle=row["employeeTitle"].ToString();
+                }
+                if (row["firstName"] != null)
+                {
+                    obj.firstName=row["firstName"].ToString();
+                }
+                if (row["middleName"] != null)
+                {
+                    obj.middleName=row["middleName"].ToString();
+                }
+                if (row["lastName"] != null)
+                {
+                    obj.lastName=row["lastName"].ToString();
+                }
+                if (row["employeeEmail"] != null)
+                {
+                    obj.employeeEmail=row["employeeEmail"].ToString();
+                }
+                if (row["cellularNo"] != null)
+                {
+                    obj.cellularNo=row["cellularNo"].ToString();
+                }
+                if (row["smsNumber"] != null)
+                {
+                    obj.smsNumber=row["smsNumber"].ToString();
+                }
+                if (row["employeeGender"] != null)
+                {
+                    obj.employeeGender=(row["employeeGender"].ToString());
+                }
+                if (row["dateOfBirth"] != null)
+                {
+                    obj.dateOfBirth=(DateTime)(row["dateOfBirth"]);
+                }
+                if (row["dateofJoin"] != null)
+                {
+                    obj.dateOfBirth = (DateTime)(row["dateofJoin"]);
+                }
+                if (row["nationalID"] != null)
+                {
+                    obj.nationalID=(row["nationalID"]).ToString();
+                }
+                if (row["isActive"] != null)
+                {
+                    obj.isActive=(Boolean)(row["isActive"]);
+                }
+                if (row["addressLine1"] != null)
+                {
+                    obj.addressLine1=(row["addressLine1"]).ToString();
+                }
+                if (row["addressLine2"] != null)
+                {
+                    obj.addressLine1=(row["addressLine2"]).ToString();
+                }
+                if (row["cityID"] != null)
+                {
+                    obj.cityID=(Int32)(row["cityID"]);
+                }
+                if (row["stateID"] != null)
+                {
+                    obj.stateID=(Int32)(row["stateID"]);
+                }
+                if (row["countryID"] != null)
+                {
+                    obj.countryID=(Int32)(row["countryID"]);
+                }
+                if (row["zipCode"] != null)
+                {
+                   obj.zipCode =(row["zipCode"]).ToString();
+                }
+                if (row["homePhone"] != null)
+                {
+                    obj.homePhone=(String)(row["homePhone"]);
+                }
+                if (row["yearOfExperience"] != null)
+                {
+                    obj.yearOfExperience=(Int32)(row["yearOfExperience"]);
+                }
+                if (row["lastQualification"] != null)
+                {
+                    obj.lastQualification=(row["lastQualification"]).ToString();
+                }
+                if (row["employeeSalary"] != null)
+                {
+                    obj.employeeSalary=(Decimal)(row["employeeSalary"]);
+                }
+                if (row["employeeHourly"] != null)
+                {
+                    obj.employeeHourly=(Decimal)(row["employeeHourly"]);
+                }
+                if (row["employeeCommission"] != null)
+                {
+                    obj.employeeCommission=(Int32)(row["employeeCommission"]);
+                }
+                if (row["commissionType"] != null)
+                {
+                    obj.commissionType=(String)(row["commissionType"]);
+                }
+                if (row["overTimeHours"] != null)
+                {
+                   obj.overTimeHours=(Int32)(row["overTimeHours"]);
+                }
+                if (row["overTimeType"] != null)
+                {
+                    obj.overTimeType=(String)(row["overTimeType"]);
+                }
+                if (row["overTimeRate"] != null)
+                {
+                    obj.overTimeRate=(Decimal)(row["overTimeRate"]);
+                }
+                if (row["IPSec"] != null)
+                {
+                    obj.IPSec=(Boolean)(row["IPSec"]);
+                }
+                if (row["fixedStore"] != null)
+                {
+                    obj.fixedStore=(Boolean)(row["fixedStore"]);
+                }
+                if (row["companyID"] != null)
+                {
+                    obj.countryID=(Int32)(row["companyID"]);
+                }
+                if (row["storeID"] != null)
+                {
+                    obj.storeID=(Int32)(row["storeID"]);
+                }
+                if (row["designationID"] != null)
+                {
+                   obj.designationID=(Int32)(row["designationID"]);
+                }
+                if (row["departmentID"] != null)
+                {
+                    obj.departmentID=(Int32)(row["departmentID"]);
+                }
+            }
+            
             return obj;
         }
     }

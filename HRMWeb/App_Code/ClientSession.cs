@@ -134,21 +134,20 @@ namespace HRMWeb.App_Code
                 {
                     if (HttpContext.Current.Session[_employeeInformation] == null)
                     {
-                        SqlParameterCollection collection = GetParameterCollectionConstructor();
-                        collection.AddWithValue("@UserName", UserName);
 
-                        EmployeeInformation empInfo = AccountHandler.Get_EmployeeInformationByUserName(collection);
-                        HttpContext.Current.Session[_employeeInformation] = empInfo;
+                        employeeinformation emp = employeeinformation.set_empinfo(ClientSession.UserName);
+                      
+                        HttpContext.Current.Session[_employeeInformation] = emp;
 
-                        return HttpContext.Current.Session[_employeeInformation] as EmployeeInformation;
+                        return HttpContext.Current.Session[_employeeInformation] as employeeinformation;
                     }
                     else
-                        return HttpContext.Current.Session[_employeeInformation] as EmployeeInformation;
+                        return HttpContext.Current.Session[_employeeInformation] as employeeinformation;
                 }
                 else
                 {
                     HttpContext.Current.Session[_employeeInformation] = null;
-                    return HttpContext.Current.Session[_employeeInformation] as EmployeeInformation;
+                    return HttpContext.Current.Session[_employeeInformation] as employeeinformation;
                 }
             }
             set { HttpContext.Current.Session[_employeeInformation] = value; }
