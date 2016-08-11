@@ -5,3 +5,11 @@ D:\Projects\HRM\HRMSolution\HRMWeb\obj\Debug\HRMWeb.dll
 D:\Projects\HRM\HRMSolution\HRMWeb\obj\Debug\HRMWeb.pdb
 D:\Projects\HRM\HRMSolution\HRMWeb\bin\HRMLib.dll
 D:\Projects\HRM\HRMSolution\HRMWeb\bin\HRMLib.pdb
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMWeb\bin\HRMWeb.dll.config
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMWeb\bin\HRMWeb.dll
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMWeb\bin\HRMWeb.pdb
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMWeb\bin\HRMLib.dll
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMWeb\bin\HRMLib.pdb
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMWeb\obj\Debug\HRMWeb.csprojResolveAssemblyReference.cache
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMWeb\obj\Debug\HRMWeb.dll
+C:\Users\Imagyn Technologies\Documents\GitHub\HRMSolution\HRMWeb\obj\Debug\HRMWeb.pdb
